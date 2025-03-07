@@ -17,12 +17,18 @@ def normalize_column_name(column_name):
     return re.sub(r'[\s\-]+', '_', column_name.strip().lower())
 
 def clean_amount(amount_str):
-    #Converts an amount string to Decimal after removing thousand separators.
-    if amount_str:
-        # Handle both comma and dot as decimal separators
-        amount_str = amount_str.replace(",", "") if "." in amount_str else amount_str.replace(".", "").replace(",", ".")
-        return Decimal(amount_str)
-    return Decimal('0.00')
+    if not amount_str:
+        return Decimal('0.00')
+    
+    # Check if comma is used as decimal separator
+    if re.search(r'\d+,\d{2}$', amount_str):
+        # European format (e.g., "1.234,56")
+        amount_str = amount_str.replace(".", "").replace(",", ".")
+    else:
+        # Standard format (e.g., "1,234.56")
+        amount_str = amount_str.replace(",", "")
+
+    return Decimal(amount_str)
 
 def normalize_status(status):
     return status.strip().lower()
@@ -85,7 +91,7 @@ def save_json(data, output_path):
 
 
 # Usage
-file_path = "test3.csv"
+file_path = "test2.csv"
 output_json_path = "JSON/output.json"
 
 data = process_csv(file_path)
