@@ -1,0 +1,9 @@
+Transaction_Date,Description,Amount,Currency,Status
+2024-03-01,Basic Transaction,"1,234.56",USD,completed
+2024-03-02,Negative Amount,"-2,345.67",USD,pending
+2024-03-03,Zero Amount,"0.00",USD,completed
+2024-03-04,Large Number,"1,234,567.89",USD,pending
+2024-03-05,European Format,"1.234.567,89",EUR,completed
+2024-03-06,No Decimals,"1,234",USD,pending
+2024-03-07,Multiple Decimals,"1,234.567.89",USD,completed
+2024-03-08,Currency Symbol,"$1,234.56",USD,pending

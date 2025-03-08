@@ -1,0 +1,16 @@
+[
+    {
+        "transaction_date": "2024-03-01",
+        "description": "Software License Premium",
+        "amount": "1234.56",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-02",
+        "description": "Hardware, Dell XPS 15",
+        "amount": "2500.00",
+        "currency": "USD",
+        "status": "pending"
+    }
+]

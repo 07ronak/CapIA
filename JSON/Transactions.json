@@ -1,0 +1,58 @@
+[
+    {
+        "transaction_date": "2024-03-01",
+        "description": "Basic Transaction",
+        "amount": "1234.56",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-02",
+        "description": "Negative Amount",
+        "amount": "-2345.67",
+        "currency": "USD",
+        "status": "pending"
+    },
+    {
+        "transaction_date": "2024-03-03",
+        "description": "Zero Amount",
+        "amount": "0.00",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-04",
+        "description": "Large Number",
+        "amount": "1234567.89",
+        "currency": "USD",
+        "status": "pending"
+    },
+    {
+        "transaction_date": "2024-03-05",
+        "description": "European Format",
+        "amount": "1234567.89",
+        "currency": "EUR",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-06",
+        "description": "No Decimals",
+        "amount": "1234",
+        "currency": "USD",
+        "status": "pending"
+    },
+    {
+        "transaction_date": "2024-03-07",
+        "description": "Multiple Decimals",
+        "amount": "1234567.89",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-08",
+        "description": "Currency Symbol",
+        "amount": "1234.56",
+        "currency": "USD",
+        "status": "pending"
+    }
+]

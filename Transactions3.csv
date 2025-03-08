@@ -1,0 +1,3 @@
+Transaction_Date,Description,Amount,Currency,Status  
+2024-03-01,"Software License Premium","1,234.56",USD,COMPLETED  
+2024-03-02,"Hardware, Dell XPS 15","2,500.00",USD,pending

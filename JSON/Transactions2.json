@@ -1,0 +1,37 @@
+[
+    {
+        "transaction_date": "2024-03-01",
+        "description": "Software, License, Premium",
+        "amount": "1234.56",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-03-02",
+        "description": "Hardware, Dell XPS 15",
+        "amount": "2500.00",
+        "currency": "USD",
+        "status": "pending"
+    },
+    {
+        "transaction_date": "2024-03-03",
+        "description": "Consulting, Q1",
+        "amount": "5678.90",
+        "currency": "USD",
+        "status": "completed"
+    },
+    {
+        "transaction_date": "2024-04-03",
+        "description": "Office Supplies, Paper, Ink",
+        "amount": "345.67",
+        "currency": "USD",
+        "status": "pending"
+    },
+    {
+        "transaction_date": "2024-03-05",
+        "description": "Training, Advanced, 2024",
+        "amount": "4567.89",
+        "currency": "USD",
+        "status": "completed"
+    }
+]
