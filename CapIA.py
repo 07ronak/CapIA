@@ -21,7 +21,7 @@ def clean_amount(amount_str):
         negative = "-" if "-" in amount_str else ""
         amount_str = re.sub(r'[^\d.,]', '', amount_str)  # Remove all non-numeric and non-decimal characters except '-'
         amount_str = re.sub(r'(?<=\d)[.,](?=\d{3}(?:[.,]|$))', '', amount_str)  # Remove thousand separators
-        amount_str = amount_str.replace(',', '.')  # Ensure decimal point is correct
+        amount_str = amount_str.replace(',', '.')
         return Decimal(f"{negative}{amount_str}")
     except (InvalidOperation, ValueError):
         print(f"Warning: Invalid amount format '{amount_str}', defaulting to 0.00")
